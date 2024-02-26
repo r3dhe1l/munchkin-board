@@ -1,7 +1,5 @@
 #include "munchkinboard.h"
-#include <QDebug>
 #include <QMessageBox>
-#include <QLabel>
 #include <QStatusBar>
 
 // This is the constructor of the class munchkinboard
