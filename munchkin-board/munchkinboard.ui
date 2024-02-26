@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>munchkinboardClass</class>
+ <widget class="QMainWindow" name="munchkinboardClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>munchkinboard</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="createPlayer1Button">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>330</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Criar Jogador</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="player1NameLine">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>290</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Nome</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="player1GenderBox">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>290</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>Gênero</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Menino</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Menina</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="createPlayer2Button">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>220</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Criar Jogador</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="player2GenderBox">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>190</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>Gênero</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Menino</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Menina</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="player2NameLine">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>190</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Nome</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="player3GenderBox">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>200</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>Gênero</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Menino</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Menina</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="player3NameLine">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Nome</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createPlayer3Button">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>230</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Criar Jogador</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="player4GenderBox">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>110</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>Gênero</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Menino</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Menina</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="player4NameLine">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>110</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Nome</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createPlayer4Button">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>140</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Criar Jogador</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="player5GenderBox">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>100</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>Gênero</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Menino</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Menina</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="player5NameLine">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Nome</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createPlayer5Button">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>130</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Criar Jogador</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="player6GenderBox">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>Gênero</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Menino</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Menina</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="player6NameLine">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Nome</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createPlayer6Button">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>40</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Criar Jogador</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>600</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fechar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="munchkinboard.qrc"/>
+ </resources>
+ <connections/>
+</ui>
