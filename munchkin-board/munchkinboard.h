@@ -2,8 +2,9 @@
 
 #include <QtWidgets/QMainWindow>
 #include <QVector>
+
 #include "ui_munchkinboard.h"
-#include "player.hpp"
+#include "createplayers.h"
 
 class munchkinboard : public QMainWindow
 {
@@ -12,12 +13,8 @@ class munchkinboard : public QMainWindow
 public:
     munchkinboard(QWidget *parent = nullptr);
     ~munchkinboard();
-    QVector<player> _players;
-    
-public slots:
-    void onCreatePlayerButtonClicked(QPushButton* button, QLineEdit* nameLine, QComboBox* genderBox);
 
 private:
+    QVector<player> _players;
     Ui::munchkinboardClass ui;
-
 };

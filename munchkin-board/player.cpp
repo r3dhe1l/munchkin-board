@@ -1,4 +1,4 @@
-#include "player.hpp"
+#include "player.h"
 
 // Default constructor for the player class
 player::player()

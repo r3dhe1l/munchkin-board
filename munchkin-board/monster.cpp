@@ -1,4 +1,4 @@
-#include "monster.hpp"
+#include "monster.h"
 
 // Default constructor for the monster class
 monster::monster()

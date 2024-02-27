@@ -89,17 +89,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="createplayers.cpp" />
     <ClCompile Include="monster.cpp" />
     <ClCompile Include="player.cpp" />
     <QtRcc Include="munchkinboard.qrc" />
+    <QtUic Include="createplayers.ui" />
     <QtUic Include="munchkinboard.ui" />
     <QtMoc Include="munchkinboard.h" />
     <ClCompile Include="munchkinboard.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="monster.hpp" />
-    <ClInclude Include="player.hpp" />
+    <QtMoc Include="createplayers.h" />
+    <ClInclude Include="monster.h" />
+    <ClInclude Include="player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
