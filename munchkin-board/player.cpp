@@ -2,12 +2,12 @@
 
 // Default constructor for the player class
 player::player()
-	: _name(""), _gender(""), _level(1), _gear(0), _temporaryBonus(0), _totalPower(1)
+	: _name(""), _gender(""), _level(1), _gear(0), _temporaryBonus(0), _totalPower(1), _chair(0)
 {}
 
 // The constructor initializes the player with a name, gender and default level, gear and temporary bonus.
-player::player(const QString name, const QString gender)
-	: _name(name), _gender(gender), _level(1), _gear(0), _temporaryBonus(0), _totalPower(1)
+player::player(const QString name, const QString gender, const std::size_t chair)
+	: _name(name), _gender(gender), _level(1), _gear(0), _temporaryBonus(0), _totalPower(1), _chair(chair)
 {}
 
 // Returns the player's name.
@@ -25,9 +25,24 @@ std::uint8_t player::getLevel() const {
 	return _level;
 }
 
+// Returns the player's gear
+std::int8_t player::getGear() const {
+	return _gear;
+}
+
+// Returns the player's temporary bonus
+std::int8_t player::getTemporaryBonus() const {
+	return _temporaryBonus;
+}
+
 // Returns the player's total power
 std::int8_t player::getTotalPower() const {
 	return _totalPower;
+}
+
+// Returns the position of the player in the board
+std::size_t player::getChair() const {
+	return _chair;
 }
 
 // Changes player's gender

@@ -17,9 +17,10 @@ public:
 
 public slots:
 	void onCreateButtonClicked();
+	void onAcceptButtonClicked();
 
 signals:
-	void playerCreated(const player& player, std::size_t pos);
+	void playerCreated(const player& player);
 
 private:
 	Ui::createplayersClass ui;

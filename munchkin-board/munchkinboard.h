@@ -1,5 +1,6 @@
 #pragma once
 
+#include <algorithm>
 #include <QtWidgets/QMainWindow>
 #include <QVector>
 
@@ -8,13 +9,15 @@
 
 class munchkinboard : public QMainWindow
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    munchkinboard(QWidget *parent = nullptr);
-    ~munchkinboard();
+	munchkinboard(QWidget* parent = nullptr);
+	~munchkinboard();
 
 private:
-    QVector<player> _players;
-    Ui::munchkinboardClass ui;
+	QVector<player> _players;
+	Ui::munchkinboardClass ui;
+
+	void connectButtons();
 };

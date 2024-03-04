@@ -1,14 +1,17 @@
 #include "createplayers.h"
 
 // This is the constructor of the class createplayers
-createplayers::createplayers(QWidget *parent)
+createplayers::createplayers(QWidget* parent)
 	: QDialog(parent),
 	ui(Ui::createplayersClass())
 {
 	ui.setupUi(this);
-	
+
 	// Connects the button to the function that creates the player
 	connect(ui.createButton, &QPushButton::clicked, this, &createplayers::onCreateButtonClicked);
+
+	// Connects the start game button to the accept function
+	connect(ui.startGameButton, &QPushButton::clicked, this, &createplayers::onAcceptButtonClicked);
 }
 
 // This is the destructor of the class createplayers
@@ -35,8 +38,8 @@ void createplayers::onCreateButtonClicked()
 		return;
 	}
 
-	player newPlayer(ui.nameLine->text(), ui.genderBox->currentText()); // Creates the player
-	emit playerCreated(newPlayer, ui.positionBox->currentText().toInt()); // Emits the signal to replace the player in the vector
+	player newPlayer(ui.nameLine->text(), ui.genderBox->currentText(), ui.positionBox->currentText().toInt()); // Creates the player
+	emit playerCreated(newPlayer); // Emits the signal to replace the player in the vector
 
 	ui.nameLine->clear(); // Clears the name line
 	ui.genderBox->setCurrentIndex(-1); // Resets the gender box
@@ -45,4 +48,14 @@ void createplayers::onCreateButtonClicked()
 
 	ui.label->setText(newPlayer.getGender() == "Menino" ? "O jogador " + newPlayer.getName() + " foi criado com sucesso!"
 		: "A jogadora " + newPlayer.getName() + " foi criada com sucesso!"); // Shows a message of creation player
+}
+
+void createplayers::onAcceptButtonClicked()
+{
+	// Checks if there are at least 3 players
+	if (ui.positionBox->count() > 3) {
+		QMessageBox::warning(this, "Erro", "São necessários pelo menos 3 jogadores.");
+		return;
+	}
+	accept(); // Accepts the dialog
 }

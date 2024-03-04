@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>createplayers</string>
   </property>
-  <widget class="QPushButton" name="startGame">
+  <widget class="QPushButton" name="startGameButton">
    <property name="geometry">
     <rect>
      <x>220</x>
