@@ -9,7 +9,7 @@ munchkinboard::munchkinboard(QWidget* parent)
 	ui.setupUi(this);
 	this->showFullScreen();
 
-	
+
 	// This will be removed when the project is finished because if defined hidden in the .ui file, the Qt Designer can't show the boxes.
 	ui.groupBox_0->hide();
 	ui.groupBox_1->hide();
@@ -17,6 +17,7 @@ munchkinboard::munchkinboard(QWidget* parent)
 	ui.groupBox_3->hide();
 	ui.groupBox_4->hide();
 	ui.groupBox_5->hide();
+	ui.battleBox->hide();
 
 	createplayers* createPlayers = new createplayers(this); // Creates the dialog to create the players
 
@@ -71,18 +72,28 @@ void munchkinboard::connectButtons()
 			// Connects the buttons to the functions that change the each player's information
 			connect(changeGenderButton, &QPushButton::clicked, this,
 				[&, genderLabel]() {player.changeGender(); genderLabel->setText(player.getGender()); });
+
 			connect(addLevelButton, &QPushButton::clicked, this,
 				[&, levelLCD, totalLCD]() {player.addOneLevel(); levelLCD->display(player.getLevel()); totalLCD->display(player.getTotalPower()); });
+
 			connect(subLevelButton, &QPushButton::clicked, this,
 				[&, levelLCD, totalLCD]() {player.substractOneLevel(); levelLCD->display(player.getLevel()); totalLCD->display(player.getTotalPower()); });
+
 			connect(addGearButton, &QPushButton::clicked, this,
-				[&, lineGear, gearLCD, totalLCD]() {player.addGear(lineGear->text().toInt()); gearLCD->display(player.getGear()); totalLCD->display(player.getTotalPower()); });
+				[&, lineGear, gearLCD, totalLCD]() {player.addGear(lineGear->text().toInt()); lineGear->clear();
+			gearLCD->display(player.getGear()); totalLCD->display(player.getTotalPower()); });
+
 			connect(subGearButton, &QPushButton::clicked, this,
-				[&, lineGear, gearLCD, totalLCD]() {player.substractGear(lineGear->text().toInt()); gearLCD->display(player.getGear()); totalLCD->display(player.getTotalPower()); });
+				[&, lineGear, gearLCD, totalLCD]() {player.substractGear(lineGear->text().toInt()); lineGear->clear();
+			gearLCD->display(player.getGear()); totalLCD->display(player.getTotalPower()); });
+
 			connect(addBonusButton, &QPushButton::clicked, this,
-				[&, lineBonus, bonusLCD, totalLCD]() {player.addTemporaryBonus(lineBonus->text().toInt()); bonusLCD->display(player.getTemporaryBonus()); totalLCD->display(player.getTotalPower()); });
+				[&, lineBonus, bonusLCD, totalLCD]() {player.addTemporaryBonus(lineBonus->text().toInt()); lineBonus->clear();
+			bonusLCD->display(player.getTemporaryBonus()); totalLCD->display(player.getTotalPower()); });
+
 			connect(subBonusButton, &QPushButton::clicked, this,
-				[&, lineBonus, bonusLCD, totalLCD]() {player.substractTemporaryBonus(lineBonus->text().toInt()); bonusLCD->display(player.getTemporaryBonus()); totalLCD->display(player.getTotalPower()); });
+				[&, lineBonus, bonusLCD, totalLCD]() {player.substractTemporaryBonus(lineBonus->text().toInt()); lineBonus->clear();
+			bonusLCD->display(player.getTemporaryBonus()); totalLCD->display(player.getTotalPower()); });
 
 			// Shows the group box with the player's information
 			this->findChild<QGroupBox*>("groupBox_" + QString::number(player.getChair()))->show();

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1920</width>
-    <height>1064</height>
+    <height>1080</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,10 +30,10 @@
    <widget class="QGroupBox" name="groupBox_0">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>740</y>
-      <width>331</width>
-      <height>141</height>
+      <x>640</x>
+      <y>810</y>
+      <width>640</width>
+      <height>270</height>
      </rect>
     </property>
     <property name="visible">
@@ -45,10 +45,10 @@
     <widget class="QPushButton" name="subLevel_0">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>430</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -58,10 +58,10 @@
     <widget class="QPushButton" name="addLevel_0">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>0</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -71,10 +71,10 @@
     <widget class="QLCDNumber" name="total_0">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>240</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -86,6 +86,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -96,10 +99,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>0</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutGear_0">
@@ -159,10 +162,10 @@
     <widget class="QLCDNumber" name="bonus_0">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>160</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -174,6 +177,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -184,10 +190,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_2">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>330</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutBonus_0">
@@ -241,10 +247,10 @@
     <widget class="QPushButton" name="changeGender_0">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>70</y>
-       <width>91</width>
-       <height>24</height>
+       <x>210</x>
+       <y>170</y>
+       <width>220</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -254,10 +260,10 @@
     <widget class="QLCDNumber" name="gear_0">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>80</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -268,6 +274,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -279,36 +288,53 @@
     <widget class="QLabel" name="name_0">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>20</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>0</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="gender_0">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>40</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>80</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLCDNumber" name="level_0">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>0</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -319,6 +345,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -331,10 +360,10 @@
    <widget class="QGroupBox" name="groupBox_1">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>510</y>
-      <width>331</width>
-      <height>141</height>
+      <x>0</x>
+      <y>540</y>
+      <width>640</width>
+      <height>270</height>
      </rect>
     </property>
     <property name="visible">
@@ -349,10 +378,10 @@
     <widget class="QPushButton" name="subLevel_1">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>430</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -362,10 +391,10 @@
     <widget class="QPushButton" name="addLevel_1">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>0</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -375,10 +404,10 @@
     <widget class="QLCDNumber" name="total_1">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>240</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -390,6 +419,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -400,10 +432,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_3">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>0</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutGear_1">
@@ -463,10 +495,10 @@
     <widget class="QLCDNumber" name="bonus_1">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>160</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -478,6 +510,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -488,10 +523,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_4">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>330</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutBonus_1">
@@ -545,10 +580,10 @@
     <widget class="QPushButton" name="changeGender_1">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>70</y>
-       <width>91</width>
-       <height>24</height>
+       <x>210</x>
+       <y>170</y>
+       <width>220</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -558,10 +593,10 @@
     <widget class="QLCDNumber" name="gear_1">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>80</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -572,6 +607,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -583,36 +621,53 @@
     <widget class="QLabel" name="name_1">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>20</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>0</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="gender_1">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>40</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>80</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLCDNumber" name="level_1">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>0</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -623,6 +678,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -635,10 +693,10 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>250</y>
-      <width>331</width>
-      <height>141</height>
+      <x>0</x>
+      <y>270</y>
+      <width>640</width>
+      <height>270</height>
      </rect>
     </property>
     <property name="visible">
@@ -653,10 +711,10 @@
     <widget class="QPushButton" name="subLevel_2">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>430</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -666,10 +724,10 @@
     <widget class="QPushButton" name="addLevel_2">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>0</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -679,10 +737,10 @@
     <widget class="QLCDNumber" name="total_2">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>240</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -694,6 +752,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -704,10 +765,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_5">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>0</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutGear_2">
@@ -767,10 +828,10 @@
     <widget class="QLCDNumber" name="bonus_2">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>160</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -782,6 +843,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -792,10 +856,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_6">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>330</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutBonus_2">
@@ -849,10 +913,10 @@
     <widget class="QPushButton" name="changeGender_2">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>70</y>
-       <width>91</width>
-       <height>24</height>
+       <x>210</x>
+       <y>170</y>
+       <width>220</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -862,10 +926,10 @@
     <widget class="QLCDNumber" name="gear_2">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>80</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -876,6 +940,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -887,36 +954,53 @@
     <widget class="QLabel" name="name_2">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>20</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>0</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="gender_2">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>40</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>80</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLCDNumber" name="level_2">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>0</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -927,6 +1011,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -939,10 +1026,10 @@
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>880</x>
-      <y>90</y>
-      <width>331</width>
-      <height>141</height>
+      <x>640</x>
+      <y>0</y>
+      <width>640</width>
+      <height>270</height>
      </rect>
     </property>
     <property name="visible">
@@ -957,10 +1044,10 @@
     <widget class="QPushButton" name="subLevel_3">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>430</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -970,10 +1057,10 @@
     <widget class="QPushButton" name="addLevel_3">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>0</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -983,10 +1070,10 @@
     <widget class="QLCDNumber" name="total_3">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>240</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -998,6 +1085,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -1008,10 +1098,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_7">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>0</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutGear_3">
@@ -1071,10 +1161,10 @@
     <widget class="QLCDNumber" name="bonus_3">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>160</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1086,6 +1176,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -1096,10 +1189,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_8">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>330</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutBonus_3">
@@ -1153,10 +1246,10 @@
     <widget class="QPushButton" name="changeGender_3">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>70</y>
-       <width>91</width>
-       <height>24</height>
+       <x>210</x>
+       <y>170</y>
+       <width>220</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -1166,10 +1259,10 @@
     <widget class="QLCDNumber" name="gear_3">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>80</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1180,6 +1273,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -1191,36 +1287,53 @@
     <widget class="QLabel" name="name_3">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>20</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>0</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="gender_3">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>40</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>80</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLCDNumber" name="level_3">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>0</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1231,6 +1344,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -1243,10 +1359,10 @@
    <widget class="QGroupBox" name="groupBox_4">
     <property name="geometry">
      <rect>
-      <x>1260</x>
+      <x>1280</x>
       <y>270</y>
-      <width>331</width>
-      <height>141</height>
+      <width>640</width>
+      <height>270</height>
      </rect>
     </property>
     <property name="visible">
@@ -1261,10 +1377,10 @@
     <widget class="QPushButton" name="subLevel_4">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>430</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -1274,10 +1390,10 @@
     <widget class="QPushButton" name="addLevel_4">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>0</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -1287,10 +1403,10 @@
     <widget class="QLCDNumber" name="total_4">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>240</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1302,6 +1418,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -1312,10 +1431,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_9">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>0</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutGear_4">
@@ -1375,10 +1494,10 @@
     <widget class="QLCDNumber" name="bonus_4">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>160</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1390,6 +1509,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -1400,10 +1522,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_10">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>330</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutBonus_4">
@@ -1457,10 +1579,10 @@
     <widget class="QPushButton" name="changeGender_4">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>70</y>
-       <width>91</width>
-       <height>24</height>
+       <x>210</x>
+       <y>170</y>
+       <width>220</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -1470,10 +1592,10 @@
     <widget class="QLCDNumber" name="gear_4">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>80</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1484,6 +1606,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -1495,36 +1620,53 @@
     <widget class="QLabel" name="name_4">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>20</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>0</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="gender_4">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>40</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>80</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLCDNumber" name="level_4">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>0</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1535,6 +1677,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -1547,10 +1692,10 @@
    <widget class="QGroupBox" name="groupBox_5">
     <property name="geometry">
      <rect>
-      <x>1260</x>
-      <y>500</y>
-      <width>331</width>
-      <height>141</height>
+      <x>1280</x>
+      <y>540</y>
+      <width>640</width>
+      <height>270</height>
      </rect>
     </property>
     <property name="visible">
@@ -1565,10 +1710,10 @@
     <widget class="QPushButton" name="subLevel_5">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>430</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -1578,10 +1723,10 @@
     <widget class="QPushButton" name="addLevel_5">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>75</width>
-       <height>24</height>
+       <x>0</x>
+       <y>170</y>
+       <width>210</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -1591,10 +1736,10 @@
     <widget class="QLCDNumber" name="total_5">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>240</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1606,6 +1751,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -1616,10 +1764,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_11">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>0</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutGear_5">
@@ -1679,10 +1827,10 @@
     <widget class="QLCDNumber" name="bonus_5">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>160</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1694,6 +1842,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -1704,10 +1855,10 @@
     <widget class="QWidget" name="horizontalLayoutWidget_12">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>100</y>
-       <width>151</width>
-       <height>31</height>
+       <x>330</x>
+       <y>220</y>
+       <width>311</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="layoutBonus_5">
@@ -1761,10 +1912,10 @@
     <widget class="QPushButton" name="changeGender_5">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>70</y>
-       <width>91</width>
-       <height>24</height>
+       <x>210</x>
+       <y>170</y>
+       <width>220</width>
+       <height>40</height>
       </rect>
      </property>
      <property name="text">
@@ -1774,10 +1925,10 @@
     <widget class="QLCDNumber" name="gear_5">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>80</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1788,6 +1939,9 @@
      </property>
      <property name="smallDecimalPoint">
       <bool>false</bool>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
      </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
@@ -1799,36 +1953,53 @@
     <widget class="QLabel" name="name_5">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>20</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>0</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="gender_5">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>40</y>
-       <width>111</width>
-       <height>16</height>
+       <x>320</x>
+       <y>80</y>
+       <width>320</width>
+       <height>80</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLCDNumber" name="level_5">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>41</width>
-       <height>41</height>
+       <x>0</x>
+       <y>0</y>
+       <width>80</width>
+       <height>160</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -1840,6 +2011,9 @@
      <property name="smallDecimalPoint">
       <bool>false</bool>
      </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
      <property name="segmentStyle">
       <enum>QLCDNumber::Flat</enum>
      </property>
@@ -1848,6 +2022,44 @@
      </property>
     </widget>
    </widget>
+   <widget class="QGroupBox" name="battleBox">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>270</y>
+      <width>640</width>
+      <height>540</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startBattle">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>470</y>
+      <width>320</width>
+      <height>135</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Batalhar</string>
+    </property>
+   </widget>
+   <zorder>startBattle</zorder>
+   <zorder>closeButton</zorder>
+   <zorder>groupBox_0</zorder>
+   <zorder>groupBox_1</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>groupBox_3</zorder>
+   <zorder>groupBox_4</zorder>
+   <zorder>groupBox_5</zorder>
+   <zorder>battleBox</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -1867,7 +2079,6 @@
     <bool>false</bool>
    </attribute>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
